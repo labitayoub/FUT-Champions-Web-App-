@@ -56,3 +56,8 @@ nav{
     margin-left: 190px;
 
 }
+.errorText{
+  
+color: red;
+font-size: 13px;
+}

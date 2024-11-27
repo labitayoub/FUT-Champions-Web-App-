@@ -38,13 +38,16 @@
                 <div id="part1">
                     <div class="space-y-2">
                         <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" placeholder="name.." id="name" name="name" onkeyup="validation()"><br>
+                        <span id="errorName" class="errorText"></span>
 
                         <label for="email" class="block text-sm font-medium text-gray-700">Nationality</label>
-                        <input type="text" id="nationality" name="nationality">
+                        <input type="text" placeholder="nationality ..." id="nationality" name="nationality"onkeyup="validation()"><br>
+                        <span id="errorNationality" class="errorText"></span>
 
                         <label for="club" class="block text-sm font-medium text-gray-700">Club</label>
-                        <input type="text" id="club" name="club">
+                        <input type="text" placeholder="club ..."id="club" name="club" onkeyup="validation()"><br>
+                        <span id="errorClub" class="errorText"></span>
                     </div>
 
                     <div>
@@ -56,6 +59,7 @@
                 <div>
                     <label for="position" class="block text-sm font-medium text-gray-700">Position</label>
                     <select name="position" id="position" onchange="afficher()" class="w-[180px]">
+                        <option id="choisePlayer">Select the player</option>
                         <option class="pl">ST</option>
                         <option class="pl">RM</option>
                         <option class="pl">CM</option>
@@ -64,8 +68,9 @@
                         <option class="pl">CB</option>
                         <option class="pl">RB</option>
                         <option id="gk">GK</option>
-                    </select>
-                </div><br>
+                    </select><br>
+                    <span id="positionValide" class="errorText"></span>
+                </div>
                 <div class="hidden" id="gkPart">
 
                     <div>
