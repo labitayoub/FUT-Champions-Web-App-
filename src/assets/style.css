@@ -1,0 +1,58 @@
+.main{
+    margin-top: 60px;
+}
+.terain{
+    background-image: url(/src/assets/img/stadium_background.webp);
+    margin-left: 20px;
+}
+
+.add{
+    text-align: center;
+    font-size: 30px;
+}
+#ajoute{
+    display: flex;
+    justify-content:space-around;
+}
+body{
+    background-color: rgb(8, 8, 8);
+}
+nav{
+    border-radius: 5px;
+}
+#part1{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+#profil{
+    padding: 15px;
+    width: 180px;
+    height:180px;
+}
+#upload{
+    display: none;
+}
+
+.uploadBtn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px;
+    border-color: brown;
+    border-radius: 5px;
+    font-weight: bold;
+   
+   
+    
+}
+.AjoutePhoto{
+    display: block;
+    background-color: coral;
+    padding-left: 53px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 190px;
+
+}

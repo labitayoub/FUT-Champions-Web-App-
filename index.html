@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/assets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <nav class="bg-gray-800 fixed top-0 left-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <h3 class="text-white text-xl font-bold">
+                    FUT Champions Web App Ultimate Team
+                </h3>
+            </div>
+        </div>
+    </nav>
+
+    <div class="grid grid-cols-3 gap-4 min-h-screen main">
+
+        <div class="terain col-span-2 bg-cover bg-center h-[700px]">
+
+        </div>
+
+
+
+        <div class="col-span-1 bg-gray-100 p-6">
+            <h2 class="add text-lg font-bold ">Ajouter un Joueur</h2><br>
+            <br>
+            <hr>
+
+            <form class="space-y-2">
+                <div id="part1">
+                    <div class="space-y-2">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="email" class="block text-sm font-medium text-gray-700">Nationality</label>
+                        <input type="text" id="nationality" name="nationality">
+
+                        <label for="club" class="block text-sm font-medium text-gray-700">Club</label>
+                        <input type="text" id="club" name="club">
+                    </div>
+
+                    <div>
+                        <img id="profil" src="./src/assets/img/img.png">
+                    </div>
+                </div>
+                <label class="AjoutePhoto" for="upload">Upload</label>
+                <div><input id="upload" type="file" accept="image/*"></div>
+                <div>
+                    <label for="position" class="block text-sm font-medium text-gray-700">Position</label>
+                    <select name="position" id="position" onchange="afficher()" class="w-[180px]">
+                        <option class="pl">ST</option>
+                        <option class="pl">RM</option>
+                        <option class="pl">CM</option>
+                        <option class="pl">LM</option>
+                        <option class="pl">LB</option>
+                        <option class="pl">CB</option>
+                        <option class="pl">RB</option>
+                        <option id="gk">GK</option>
+                    </select>
+                </div><br>
+                <div class="hidden" id="gkPart">
+
+                    <div>
+                        <label for="passing" class="block text-sm font-medium text-gray-700">Passing</label>
+                        <input type="number" name="passing" class="w-[140px]">
+                    </div>
+                    <div>
+                        <label for="dribbling" class="block text-sm font-medium text-gray-700">Dribbling</label>
+                        <input type="number" name="dribbling" class="w-[140px]">
+                    </div>
+
+                    <div>
+                        <label for="physical" class="block text-sm font-medium text-gray-700">physical</label>
+                        <input type="number" name="physical" class="w-[140px]">
+                    </div>
+
+                </div><br>
+                <div class="hidden" id="plPart">
+                    <div>
+                        <label for="rating" class="block text-sm font-medium text-gray-700">Rating</label>
+                        <input type="number" name="rating" class="w-[140px]">
+                    </div>
+
+                    <div>
+                        <label for="shooting" class="block text-sm font-medium text-gray-700">Shooting</label>
+                        <input type="number" name="shooting" class="w-[140px]">
+                    </div>
+                    <div>
+                        <label for="passing" class="block text-sm font-medium text-gray-700">Passing</label>
+                        <input type="number" name="passing" class="w-[140px]">
+                    </div>
+                    <div>
+                        <label for="dribbling" class="block text-sm font-medium text-gray-700">Dribbling</label>
+                        <input type="number" name="dribbling" class="w-[140px]">
+                    </div>
+                    <div>
+                        <label for="defending" class="block text-sm font-medium text-gray-700">Defending</label>
+                        <input type="number" name="defending" class="w-[140px]">
+                    </div>
+                    <div>
+                        <label for="physical" class="block text-sm font-medium text-gray-700">physical</label>
+                        <input type="number" name="physical" class="w-[140px]">
+                    </div>
+
+                </div><br>
+
+                <button type="submit"
+                    class="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600">Submit</button>
+            </form>
+        </div>
+
+        <div class="col-span-3 bg-gray-200 p-6">
+            <h2 class="text-lg font-bold">Les joueurs remplaçants</h2>
+        </div>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
