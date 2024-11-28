@@ -20,25 +20,25 @@
             </div>
         </div>
     </nav>
-<div id="parent">
-    <div id="item1"></div>
-    <div id="item2"></div>
-    <div id="item3"></div>
-    <div id="item4"></div>
-    <div id="item5"></div>
-    <div id="item6"></div>
-    <div id="item7"></div>
-    <div id="item8"></div>
-    <div id="item9"></div>
-    <div id="item10"></div>
-    <div id="item11"></div>
-</div>
-    <div  class="grid grid-cols-3 gap-4 min-h-screen main">
+
+    <div class="grid grid-cols-3 gap-4 min-h-screen main">
 
         <div class="terain col-span-2 bg-cover bg-center h-[700px]">
+
+            <div id="parent">
+                <div class="card" id="item1" ><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item2" ><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item3" ><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item4" ><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item5" ><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item6" ><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item7" ><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item8" ><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item9" ><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item10" ><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item11" ><img src="./src/assets/img/badge.png"></div>
+            </div>
         </div>
-
-
 
         <div class="col-span-1 bg-gray-100 p-6">
             <h2 class="add text-lg font-bold ">Ajouter un Joueur</h2><br>
@@ -52,11 +52,12 @@
                         <span id="errorName" class="errorText"></span>
 
                         <label for="email" class="block text-sm font-medium text-gray-700">Nationality</label>
-                        <input type="text" placeholder="nationality ..." id="nationality" name="nationality"onkeyup="validation()"><br>
+                        <input type="text" placeholder="nationality ..." id="nationality" name="nationality"
+                            onkeyup="validation()"><br>
                         <span id="errorNationality" class="errorText"></span>
 
                         <label for="club" class="block text-sm font-medium text-gray-700">Club</label>
-                        <input type="text" placeholder="club ..."id="club" name="club" onkeyup="validation()"><br>
+                        <input type="text" placeholder="club ..." id="club" name="club" onkeyup="validation()"><br>
                         <span id="errorClub" class="errorText"></span>
                     </div>
 
