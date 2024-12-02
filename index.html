@@ -26,39 +26,60 @@
         <div class="terain col-span-2 bg-cover bg-center h-[990px]">
 
             <div id="parent">
-                <div class="card" id="item1" ><img src="./src/assets/img/badge.png"></div>
-                <div class="card" id="item2" ><img src="./src/assets/img/badge.png"></div>
-                <div class="card" id="item3" ><img src="./src/assets/img/badge.png"></div>
-                <div class="card" id="item4" ><img src="./src/assets/img/badge.png"></div>
-                <div class="card" id="item5" ><img src="./src/assets/img/badge.png"></div>
-                <div class="card" id="item6" ><img src="./src/assets/img/badge.png"></div>
-                <div class="card" id="item7" ><img src="./src/assets/img/badge.png"></div>
-                <div class="card" id="item8" ><img src="./src/assets/img/badge.png"></div>
-                <div class="card" id="item9" ><img src="./src/assets/img/badge.png"></div>
-                <div class="card" id="item10" ><img src="./src/assets/img/badge.png"></div>
-                <div class="card" id="item11" ><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item1">
+                    <img src="./src/assets/img/badge.png">
+                    <div class="cardInfo">
+                        <!-- <img src="./src/assets/img/ayoub_labit-removebg-preview.png" class="cardPhoto" alt="">
+                        <hr size="4" color="blue" width="66%" class="ligne">
+                        <p class="cardPosition">ST</p>
+                        <p class="cardCalcul">43</p>
+                        <p class="cardName">AYOUB</p>
+                        <p class="cardNationaly">MAR</p>
+                        <p class="cardRat">RAT 23</p>
+                        <p class="cardShoot">SHO 22</p>
+                        <p class="cardPass">PAS 34</p>
+                        <p class="cardDrib">DRI 54</p>
+                        <p class="cardDef">DEF 34</p>
+                        <p class="cardPhy">PHY 73</p> -->
+                    </div>
+                </div>
+                <div class="card" id="item2"><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item3"><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item4"><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item5"><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item6"><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item7"><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item8"><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item9"><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item10"><img src="./src/assets/img/badge.png"></div>
+                <div class="card" id="item11"><img src="./src/assets/img/badge.png"></div>
             </div>
         </div>
 
         <div id="formulaire" class="col-span-1 bg-gray-100 p-6">
-            <h2 class="add text-lg font-bold ">Ajouter un Joueur</h2><br>
+            <h2 class="add text-lg font-bold text-white">Ajouter un Joueur</h2><br>
             <br>
             <hr>
-            <form class="space-y-2">
+            <form  id="fromAjoute" class="space-y-2">
                 <div id="part1">
                     <div class="space-y-2">
-                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                        <input type="text" placeholder="name.." id="name" name="name" onkeyup="validation()"><br>
+                        <label for="name" class="text-white block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" placeholder=" name.." id="name" onkeyup="validation()"><br>
                         <span id="errorName" class="errorText"></span>
 
-                        <label for="email" class="block text-sm font-medium text-gray-700">Nationality</label>
-                        <input type="text" placeholder="nationality ..." id="nationality" name="nationality"
+                        <label for="email"
+                            class="text-white block text-sm font-medium text-gray-700">Nationality</label>
+                        <input type="text" placeholder=" nationality ..." id="nationality" 
                             onkeyup="validation()"><br>
                         <span id="errorNationality" class="errorText"></span>
-
-                        <label for="club" class="block text-sm font-medium text-gray-700">Club</label>
-                        <input type="text" placeholder="club ..." id="club" name="club" onkeyup="validation()"><br>
-                        <span id="errorClub" class="errorText"></span>
+                        <div>
+                            <img id="logo" style="width: 28px; height: 26px;" src="./src/assets/log/logojpg.jpg" alt=""> 
+                        </div>
+                        <div id="clubButton">
+                            <label for="club" class="clubButton">Upload Club Logo</label>
+                            <input type="file" id="club" accept="image/*" onkeyup="validation()"><br>
+                            <span id="errorClub" class="errorText"></span>
+                        </div>
                     </div>
 
                     <div>
@@ -68,7 +89,7 @@
                 <label class="AjoutePhoto" for="upload">Upload</label>
                 <div><input id="upload" type="file" accept="image/*"></div>
                 <div>
-                    <label for="position" class="block text-sm font-medium text-gray-700">Position</label>
+                    <label for="position" class="text-white block text-sm font-medium text-gray-700">Position</label>
                     <select name="position" id="position" onchange="afficher()" class="w-[180px]">
                         <option id="choisePlayer">Select the player</option>
                         <option class="pl">ST</option>
@@ -85,45 +106,66 @@
                 <div class="hidden" id="gkPart">
 
                     <div>
-                        <label for="passing" class="block text-sm font-medium text-gray-700">Passing</label>
-                        <input type="number" name="passing" class="w-[140px]">
+                        <label for="rating" class=" text-white block text-sm font-medium ">Rating</label>
+                        <input type="number" id="rating" class="w-[140px] bg-orange-100 rounded" min="0" max="100">
                     </div>
                     <div>
-                        <label for="dribbling" class="block text-sm font-medium text-gray-700">Dribbling</label>
-                        <input type="number" name="dribbling" class="w-[140px]">
+                        <label for="diving" class=" text-white block text-sm font-medium ">Diving</label>
+                        <input type="number" id="diving" class="w-[140px] bg-orange-100 rounded" min="0" max="100">
                     </div>
 
                     <div>
-                        <label for="physical" class="block text-sm font-medium text-gray-700">physical</label>
-                        <input type="number" name="physical" class="w-[140px]">
+                        <label for="handling" class=" text-white block text-sm font-medium ">Handling</label>
+                        <input type="number" id="handling" class="w-[140px] bg-orange-50 rounded" min="0" max="100">
+                    </div>
+                    <div>
+                        <label for="positioning" class=" text-white block text-sm font-medium ">Positioning</label>
+                        <input type="number" id="positioning" class="w-[140px] bg-orange-50 rounded" min="0" max="100">
+                    </div>
+                    <div>
+                        <label for="kicking" class=" text-white block text-sm font-medium ">Kicking</label>
+                        <input type="number" id="kicking" class="w-[140px] bg-orange-50 rounded" min="0" max="100">
+                    </div>
+                    <div>
+                        <label for="reflexes" class=" text-white block text-sm font-medium ">Reflexes</label>
+                        <input type="number" id="reflexes" class="w-[140px] bg-orange-50 rounded" min="0" max="100">
+                    </div>
+                    <div>
+                        <label for="speed" class=" text-white block text-sm font-medium ">Speed</label>
+                        <input type="number" id="speed" class= "w-[140px] bg-orange-50 rounded" min="0" max="100">
                     </div>
 
                 </div><br>
                 <div class="hidden" id="plPart">
-                    <div>
-                        <label for="rating" class="block text-sm font-medium text-gray-700">Rating</label>
-                        <input type="number" name="rating" class="w-[140px]">
-                    </div>
 
                     <div>
-                        <label for="shooting" class="block text-sm font-medium text-gray-700">Shooting</label>
-                        <input type="number" name="shooting" class="w-[140px]">
+                        <label for="rating" class=" text-white block text-sm font-medium ">Rating</label>
+                        <input type="number" id="rating" class="w-[140px] bg-orange-50 rounded" min="0" max="100">
+                    </div>
+                    
+                    <div>
+                        <label for="shooting" class=" text-white block text-sm font-medium ">Shooting</label>
+                        <input type="number" id="shooting" class="w-[140px] bg-orange-50 rounded" min="0" max="100">
                     </div>
                     <div>
-                        <label for="passing" class="block text-sm font-medium text-gray-700">Passing</label>
-                        <input type="number" name="passing" class="w-[140px]">
+                        <label for="passing" class=" text-white block text-sm font-medium ">Passing</label>
+                        <input type="number" id="passing" class="w-[140px] bg-orange-50 rounded" min="0" max="100">
                     </div>
                     <div>
-                        <label for="dribbling" class="block text-sm font-medium text-gray-700">Dribbling</label>
-                        <input type="number" name="dribbling" class="w-[140px]">
+                        <label for="dribbling" class=" text-white block text-sm font-medium ">Dribbling</label>
+                        <input type="number" id="dribbling" class="w-[140px] bg-orange-50 rounded" min="0" max="100">
                     </div>
                     <div>
-                        <label for="defending" class="block text-sm font-medium text-gray-700">Defending</label>
-                        <input type="number" name="defending" class="w-[140px]">
+                        <label for="defending" class=" text-white block text-sm font-medium ">Defending</label>
+                        <input type="number" id="defending" class="w-[140px] bg-orange-50 rounded" min="0" max="100">
                     </div>
                     <div>
-                        <label for="physical" class="block text-sm font-medium text-gray-700">physical</label>
-                        <input type="number" name="physical" class="w-[140px]">
+                        <label for="physical" class=" text-white block text-sm font-medium ">physical</label>
+                        <input type="number" id="physical" class="w-[140px] bg-orange-50 rounded" min="0" max="100">
+                    </div>
+                    <div>
+                        <label for="Speed" class=" text-white block text-sm font-medium ">Speed</label>
+                        <input type="number" id="Speed" class="w-[140px] bg-orange-50 rounded" min="0" max="100">
                     </div>
 
                 </div><br>
