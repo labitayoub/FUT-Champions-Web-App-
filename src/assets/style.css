@@ -62,8 +62,8 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 5%;
-    left: 20%;
+    top: 0%;
+    left: 23%;
 
 }
 .ST{
@@ -73,8 +73,8 @@ body{
     background-repeat: no-repeat;
     position: absolute;
     z-index: 1;
-    top: 0%;
-    left: 43%;
+    top: -4%;
+    left: 51%;
 }
 .RW{
 
@@ -83,8 +83,8 @@ body{
     background-repeat: no-repeat;
     position: absolute;
     z-index: 1;
-    top: 5%;
-    right: 10%;
+    top: 0%;
+    right: -3%;
 }
 
 .LCM{
@@ -95,7 +95,7 @@ body{
     position: absolute;
     z-index: 1;
     top: 25%;
-    left: 4%;
+    left: 11%;
 }
 .CM {
     background-image: url(./images/badge.png);
@@ -103,8 +103,8 @@ body{
     background-repeat: no-repeat;
     position: absolute;
     z-index: 1;
-    top: 26%;
-    left: 43%;
+    top: 24%;
+    left: 47%;
 }
 
 .RCM {
@@ -113,7 +113,7 @@ body{
     background-repeat: no-repeat;
     position: absolute;
     top: 26%;
-    right: -5%;
+    right: -9%;
 }
 
 .LB {
@@ -121,7 +121,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 60%;
+    top: 62%;
     left: 4%;
 }
 
@@ -130,8 +130,8 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 50%;
-    left: 25%;
+    top: 47%;
+    left: 29%;
 }
 
 .RCB {
@@ -139,8 +139,8 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 50%;
-    right: 15%;
+    top: 47%;
+    right: 10%;
 }
 
 .RB {
@@ -148,8 +148,8 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 60%;
-    right: -5%;
+    top: 63%;
+    right: -9%;
 }
 
 .GK {
@@ -157,8 +157,8 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 70%;
-    left: 45%;
+    top: 71%;
+    left: 48%;
 }
 
 .gk-info{
@@ -169,14 +169,13 @@ body{
     top: -11%;
     left: 1%;
     color: #f4f4f4;
-    /* overflow: hidden; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-/* .gk-info:hover {
+.gk-info:hover {
     transform: scale(1.1); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3); 
 
-} */
+}
 
 .pl-info{
 
@@ -187,14 +186,14 @@ body{
     top: -12%;
     left: 5%;
     color: #f4f4f4;
-    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
-/* .pl-info:hover {
+.pl-info:hover {
     transform: scale(1.1); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3); 
 
-} */
+}
 
 .photo {
     width: 80px;
@@ -305,34 +304,7 @@ left : 15% ;
         width: 50px;
         color: azure;
     }
-
-    .gk-info{
-        height: 55px;
-        width: 35px;
-        font-size: 2px;
-        background: url('/src/assets/images/SEASON-REWARD_FIFA_22.png') no-repeat center/cover; 
-        position: relative;
-        top: -18%;
-        left: 0%;
-        color: #f4f4f4;
-        /* overflow: hidden; */
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .pl-info{
-
-        height: 45px;
-        width: 35px;
-        font-size: 2px;
-        background: url('/src/assets/images/SQUAD-FOUNDATIONS-T23.png') no-repeat center/cover; 
-        position: relative;
-        top: -9%;
-        left: 1%;
-        color: #f4f4f4;
-        /* overflow: hidden; */
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-    }
-    
+   
 .photo {
     width: 20px;
     height: 20px;
