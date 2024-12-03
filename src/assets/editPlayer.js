@@ -14,13 +14,10 @@ function editplayer(player){
 
         playerform.elements["name"].value = player.name;
 
-        // playerform.elements["photo"].value = player.photo;
         playerform.elements["position"].value = player.position;
         playerform.elements["nationality"].value = player.nationality;
-        // playerform.elements["flag"].value = player.flag;
         
         playerform.elements["club"].value = player.club;
-        // playerform.elements["logo"].value = player.logo;
         
         document.getElementById('goalkeeper-fields').classList.remove('hidden');
         document.getElementById('outfield-fields').classList.add('hidden');
@@ -38,13 +35,10 @@ function editplayer(player){
 
         playerform.elements["name"].value = player.name;
 
-        // playerform.elements["photo"].value = player.photo;
         playerform.elements["position"].value = player.position;
         playerform.elements["nationality"].value = player.nationality;
-        // playerform.elements["flag"].value = player.flag;
         
         playerform.elements["club"].value = player.club;
-        // playerform.elements["logo"].value = player.logo;
 
         playerform.elements["rating"].value = player.rating;
         playerform.elements["pace"].value = player.pace;
@@ -57,24 +51,8 @@ function editplayer(player){
         document.getElementById('goalkeeper-fields').classList.add('hidden');
         document.getElementById('outfield-fields').classList.remove('hidden');
 
-        // playerform.elements["goalkeeper_rating"].value = player.goalkeeper_rating;
 
     }
-
-
-    // if (player.photo) {
-    //     const imgProfile = document.getElementById('profile');
-    //     imgProfile.src = player.photo;
-    // }
-    // if (player.flag) {
-    //     const imgFlag = document.getElementById('flagimg');
-    //     imgFlag.src = player.flag; 
-    // }
-    
-    // if (player.logo) {
-    //     const imgLogo = document.getElementById('logoimg');
-    //     imgLogo.src = player.logo; 
-    // }
 
 
 }

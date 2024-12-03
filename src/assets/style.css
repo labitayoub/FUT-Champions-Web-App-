@@ -172,11 +172,11 @@ body{
     /* overflow: hidden; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.gk-info:hover {
+/* .gk-info:hover {
     transform: scale(1.1); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
 
-}
+} */
 
 .pl-info{
 
@@ -187,15 +187,14 @@ body{
     top: -12%;
     left: 5%;
     color: #f4f4f4;
-    /* overflow: hidden; */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 
 }
-.pl-info:hover {
+/* .pl-info:hover {
     transform: scale(1.1); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
 
-}
+} */
 
 .photo {
     width: 80px;
